@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jonny Doodle Bakey</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+<!-- navigatie -->
+<!-- BRON: code gebruikt voor de navigatie van Dev Ed tutorial op Youtube https://www.youtube.com/watch?v=gXkqy0b4M5g&list=LLmbBtFmhql64mdSxAOEIB6g&index=2&t=2s niet volledig overgenomen. Ook hulp gehad van Rowin Ruizendaal uit mijn klas. -->
+        <nav>
+            <div id="logo">
+                <h2>Foodtruck finder</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Zoeken</a></li>
+                <li><a href="#">Bewaard</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Profiel</a></li>
+            </ul>
+<!-- burger menu -->
+            <div class="burger">
+                <div class="lijn1"></div>
+                <div class="lijn2"></div>
+                <div class="lijn3"></div>
+            </div>
+<!-- einde burger menu -->
+        </nav>
+<!-- einde navigatie -->
+<!-- einde gebruik bron -->
+    </header>
+    <main>
+<!-- info foodtruck -->
+<h1>Jonny Doodle Foodtruck</h1>
+<p>Home / Foodtrucks / Jonny Doodle</p>
+<div id="buttonplace">
+<button id="boeken" type="button">Boeken</button>
+</div>
+<container id="infotekst">
+    <h2>Jonny Doodle Foodtruck - dessert foodtruck</h2>
+    <p>Johnny Doodle ken je misschien al. Maar nu is er ook de Johnny Doodle Foodtruck! Eveneens voorzien van (h)eerlijke chocolade en zachte fudge. Zet je smaakpapillen maar vast schrap! Want Johnny houdt van eigenwijze combinaties. Neem bijvoorbeeld Fudge Brownie of Strawberry Merengue. Verder heeft zelfs de truck een creatieve verpakking gekregen en is deze voorzien van diverse verrassende slogans. Daarmee is de Johnny Doodle Foodtruck ook wel echt een plaatje op elk feestje.</p>
+</container>
+<!-- einde info foodtruck -->
+<!-- foto's van de foodtruck -->
+<container id="feed">
+   <ul id="deatailpagina">
+    <li>
+        <a href="jonny.html"><img src="img/ad.1%20kopie%202.jpg" class="detailfoto" alt="Foodtruck foto 1"/></a>
+    </li>
+    <li>
+        <a href="#"><img src="img/jonny.jpg" class="detailfoto" alt="Foodtruck foto 2"/></a>
+    </li>
+    <li>
+        <a href="#"><img src="img/jonny2.jpg" class="detailfoto" alt="Foodtruck foto 3"/></a>
+    </li>
+    <li>
+        <a href="#"><img src="img/jonny3.jpg" class="detailfoto" alt="Foodtruck foto 4"/></a>
+    </li>
+    </ul>
+</container>
+<!-- einde foto's foodtruck -->
+<!-- formulier -->
+<section id="formulier">
+   <h3>Stel hier uw vragen over deze foodtruck</h3>
+    <form id="vraag" name="vragen formulier" action="#">
+        <fieldset>
+            <label>
+                <span class="content-name">Voornaam</span>
+            </label>
+            <input type="text" placeholder="Maud">
+        </fieldset>
+        <fieldset>
+            <label>Achternaam</label>
+            <input type="text" placeholder="Houtman">
+        </fieldset>
+        <fieldset>
+            <label>E-mail</label>
+            <input type="email" placeholder="maud.houtman@gmail.com">
+        </fieldset>
+        <fieldset>
+            <label>Stel hier uw vraag</label>
+            <textarea name="comments" cols="20" rows="4">Typ hier uw vraag...</textarea>
+        </fieldset>
+        <button id="button_1" type="submit">Verstuur</button>
+    </form>
+</section>
+<!-- einde formulier -->
+<!-- footer -->
+<footer>
+        <p>Foodtruck finder &copy; 2019</p>
+        <p>Maud Houtman</p>
+    </footer>
+<!-- einde footer -->
+<script src="js/java.js"></script>
+    </main>
+</body>
+</html>

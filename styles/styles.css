@@ -1,0 +1,348 @@
+/* styling voor alle code */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* styling van de navigatie */
+/* BRON: code gebruikt voor de navigatie van Dev Ed tutorial op Youtube https://www.youtube.com/watch?v=gXkqy0b4M5g&list=LLmbBtFmhql64mdSxAOEIB6g&index=2&t=2s niet volledig overgenomen. Ook hulp gehad van Rowin Ruizendaal uit mijn klas. */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(233,153,2);
+}
+
+nav li a:hover{
+    color: #929292; 
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 11px;
+}
+
+nav li{
+    list-style: none;
+}
+
+/* styling logo */
+nav h2{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/* styling burger menu */
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+}
+
+.burger{
+    display: none;
+}
+
+/* media query die breakpoint bepaalt */
+@media screen and (max-width:768px){
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 18vh;
+        top: 8vh;
+        background-color: rgb(233,153,2); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        display: none;
+        transform: translateX(100%);
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    display: inline;
+    transform: translateX(0%);
+    text-align: center;
+}
+/* einde gebruik bron */
+
+/* styling kop */
+/* BRON: code gebruikt voor de animatie van DarkCode op Youtube https://www.youtube.com/watch?v=Syg_9iB1vco&t=20s */
+.container{
+    background-image: url('/img/2044289.jpg');
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-attachment: fixed; 
+    text-align: center;
+}
+
+.container span{
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: bold;
+    display: block;
+}
+
+.text1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px rgb(233,153,2);
+    background-image: url('/img/2044289.jpg');
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+    animation: text 3s 1;
+}
+
+.text2{
+    font-size: 25px;
+    text-shadow: 2px 2px rgb(233,153,2);
+}
+
+@keyframes text{
+    0%{
+        background-image: url('/img/2044289.jpg');
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+    margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+}
+
+/* styling filter */
+#filter{
+    background-color: #929292;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+form fieldset{
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 4px;
+}
+
+#filter h2{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+input[type=submit]{
+    background-color: rgb(233,153,2);
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 8px;
+    color: white;
+}
+
+input[type=submit]:hover{
+    transform: scale(1.1);
+}
+
+#filterform label:hover{
+    color: rgb(233,153,2);
+}
+
+/* styling feed */
+#feed ul{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    padding: 1rem;
+}
+
+li{
+    background-color: rgb(233,153,2);
+    overflow: hidden;
+}
+
+.feedfoto{
+    width: 225px;
+    height: 180px;
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.feedfoto:hover{
+    transform: scale(1.1);
+}
+
+li p{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 8px;
+}
+
+li p:hover{
+    color: #929292;
+    cursor: pointer;
+}
+
+/* styling footer */
+footer{
+    padding: 20px;
+    color: white;
+    background-color: rgb(233,153,2);
+    text-align: center;
+}
+
+/* styling uitleg tekstje */
+#uitleg h2{
+    letter-spacing: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+#uitleg p{
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* styling detail pagina Jonny truck */
+main h1{
+    font-size: 25px;
+    letter-spacing: 4px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin:20px;
+    text-align: center;
+}
+
+main p{
+    font-size: 12px;
+    padding-left: 1rem;
+    text-align: center;
+    color: dimgrey;
+}
+
+.detailfoto{
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    transition: transform 2s;
+}
+
+.detailfoto:hover{
+    transform: scale(1.1);
+}
+
+#infotekst h2{
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 20px;
+    background-color: rgb(233,153,2, 0.2);
+    text-align: center;
+}
+
+#infotekst p{
+    font-size: 15px;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    color: black;
+}
+
+/* styling boeken knop */
+
+#boeken{
+    background-color: rgb(233,153,2);
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+}
+
+#boeken:hover{
+    box-shadow: 3px 3px 3px grey;
+    transform: scale(1.1);
+}
+
+#buttonplace{
+    text-align: center;
+}
+
+/* styling formulier */
+#vraag{
+    width: 350px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+}
+
+#formulier label{
+    background-color: rgb(233,153,2, 0.2);
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#button_1{
+    padding: 3px;
+    background-color: rgb(233,153,2);
+    border-radius: 8px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+#button_1:hover{
+    box-shadow: 3px 3px 3px grey;
+    transform: scale(1.1);
+}
+
+#formulier h3{
+    width: 350px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-align: center;
+}

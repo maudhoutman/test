@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodtruck finder</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+<!-- navigatie -->
+<!-- BRON: code gebruikt voor de navigatie van Dev Ed tutorial op Youtube https://www.youtube.com/watch?v=gXkqy0b4M5g&list=LLmbBtFmhql64mdSxAOEIB6g&index=2&t=2s niet volledig overgenomen. Ook hulp gehad van Rowin Ruizendaal uit mijn klas. -->
+        <nav>
+            <div id="logo">
+                <h2>Foodtruck finder</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Zoeken</a></li>
+                <li><a href="#">Bewaard</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Profiel</a></li>
+            </ul>
+<!-- burger menu -->
+            <div class="burger">
+                <div class="lijn1"></div>
+                <div class="lijn2"></div>
+                <div class="lijn3"></div>
+            </div>
+<!-- einde burger menu -->
+        </nav>
+<!-- einde navigatie -->
+<!-- einde gebruik bron -->
+    </header>
+<!-- BRON: code gebruikt voor de animatie van DarkCode op Youtube https://www.youtube.com/watch?v=Syg_9iB1vco&t=20s -->    
+<!-- kop -->
+<div class="container">
+    <span class="text1">Welkom bij</span>
+    <span class="text2">Foodtruck finder</span>
+</div>
+<!-- einde kop -->
+<!-- einde gebruik bron -->
+<!-- filter -->
+<section id="filter">
+    <h2>Filter de resultaten</h2>
+    <form id="filterform" name="filer formulier" action="#">
+       <fieldset>
+           <input type="checkbox" name="soort truck 1" value="Foodtrucks"><label> Foodtrucks</label>
+       </fieldset>
+       <fieldset>
+           <input type="checkbox" name="soort truck 1" value="Foodtrucks">
+           <label>Dranken trucks</label>
+       </fieldset>
+       <fieldset>
+           <input type="checkbox" name="soort truck 1" value="Foodtrucks">
+           <label>Non foodtrucks</label>
+       </fieldset>
+       <fieldset>
+           <input type="checkbox" name="soort truck 1" value="Foodtrucks">
+           <label>Toetjes</label>
+       </fieldset> 
+        <input type="submit" value="bekijk de resultaten">
+    </form>
+</section>
+<!-- einde filter -->
+<!-- feed van foodtrucks -->
+<section id="feed">
+   <ul id="feeditems">
+    <li>
+        <a href="jonny.html"><img src="img/ad.1%20kopie%202.jpg" class="feedfoto" alt="Foodtruck foto 1"/></a>
+        <p>Jonny Doodle Bakery</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/coffee.jpg" class="feedfoto" alt="Foodtruck foto 2"/></a>
+        <p>Coffee truck</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/de%20wafelwagen.png" class="feedfoto" alt="Foodtruck foto 3"/></a>
+        <p>Wafelwagen</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/holy%20pasta.jpg" class="feedfoto" alt="Foodtruck foto 4"/></a>
+        <p>Holy pasta</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/indy.jpg" class="feedfoto" alt="Foodtruck foto 5"/></a>
+        <p>JIndy Thai foodtruck</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/kaasfondue.jpg" class="feedfoto" alt="Foodtruck foto 6"/></a>
+        <p>Kaasfondue truck</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/koffie%20cafe.jpg" class="feedfoto" alt="Foodtruck foto 7"/></a>
+        <p>Koffie en thee truck</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/lefood.jpg" class="feedfoto" alt="Foodtruck foto 8"/></a>
+        <p>Le food truck</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/pannenkoeken.jpg" class="feedfoto" alt="Foodtruck foto 8"/></a>
+        <p>Pannenkoeken en wafels</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/pffertjes.jpg" class="feedfoto" alt="Foodtruck foto 10"/></a>
+        <p>Poffertjes truck</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/serg.jpg" class="feedfoto" alt="Foodtruck foto 11"/></a>
+        <p>Sergeant pepper</p>
+    </li>
+    <li>
+        <a href="#"><img src="img/time2%20koffie.jpg" class="feedfoto" alt="Foodtruck foto 12"/></a>
+        <p>Time2 coffee</p>
+    </li>
+    </ul>
+</section>
+<!-- uileg tekstje -->
+<section id="uitleg">
+    <h2>Hoe werkt het?</h2>
+    <p>In Nederland zijn er op dit moment veel foodtrucks actief op de markt. En natuurlijk wil elke foodtrucker maximale aandacht voor zijn foodtruck. Geen liefdeloze hap maar met passie bereide gerechten of snacks. Maar hoe krijg je die aandacht? En hoe bereik je dat jouw foodtruck toch regelmatig wordt ingehuurd door betalende opdrachtgevers?
+
+    De leden op Foodtruck Finder ontvangen jaarlijks ruim 1500 directe boekingen! Naast deze boekingen zijn er ruim 760 Algemene Aanvragen geplaatst door organisaties  die 1 of meerdere foodtrucks wilden huren.</p>
+</section>
+<!-- footer -->
+<footer>
+        <p>Foodtruck finder &copy; 2019</p>
+        <p>Maud Houtman</p>
+    </footer>
+<!-- einde footer -->
+<script src="js/java.js"></script>
+</body>
+</html>
+
+
+
